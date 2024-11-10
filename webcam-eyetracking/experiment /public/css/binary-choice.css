@@ -1,0 +1,285 @@
+#feedback {
+  color: darkred;
+  font-size: 30px;
+  /* opacity: 0.3; */
+  width: 100%; /* 50% of the viewport width */
+  height: 100%;
+  /* left:20%;
+  top: 20%; */
+}
+
+
+
+#prac_trial_prompt {
+  color: black;
+  font-size: 30px;
+  /* opacity: 0.3; */
+  width: 100%; /* 50% of the viewport width */
+  height: 100%;
+  /* left:20%;
+  top: 20%; */
+}
+
+#calibration_dot_instruction {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    border: 1px solid black;
+    display: inline-block;
+    
+}
+
+
+
+
+#left_state {
+  width: 30vw; /* 30% of the viewport width */
+  height: 40vh; /* 30% of the viewport height */
+  line-height: 28vh; /* Slightly less than height to vertically center text */
+  font-size: 5vw; /* Font size responsive to viewport width */
+  position: fixed;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  text-align-last: center;
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  left: 25%;
+  top: 50%;
+}
+
+
+#right_state {
+  width: 30vw; /* 30% of the viewport width */
+  height: 40vh; /* 30% of the viewport height */
+  line-height: 28vh; /* Slightly less than height to vertically center text */
+  font-size: 5vw; /* Font size responsive to viewport width */
+  position: fixed;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  text-align-last: center;
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  left: 75%;
+  top: 50%;
+}
+
+
+#left_state_text {
+  width: 30vw; /* 30% of the viewport width */
+  height: 20vh; /* 30% of the viewport height */
+  line-height: 20vh; /* Slightly less than height to vertically center text */
+  font-size: 2vw; /* Font size responsive to viewport width */
+  position: fixed;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  text-align-last: center;
+  border: 0.1px solid black;
+  cursor: pointer;
+  left: 25%;
+  top: 50%;
+}
+
+
+#right_state_text {
+  width: 30vw; /* 30% of the viewport width */
+  height: 20vh; /* 30% of the viewport height */
+  line-height: 20vh; /* Slightly less than height to vertically center text */
+  font-size: 2vw; /* Font size responsive to viewport width */
+  position: fixed;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  text-align-last: center;
+  border: 0.1px solid black;
+  cursor: pointer;
+  left: 75%;
+  top: 50%;
+}
+
+#left-div {
+  position: fixed;
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw; /* Adjust width as needed */
+  height: 90vh; /* Adjust height as needed */
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid black;
+  z-index: 999;
+}
+
+/* Right-aligned div */
+#right-div {
+  position: fixed;
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw; /* Adjust width as needed */
+  height: 90vh; /* Adjust height as needed */
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid black;
+  z-index: 999;
+}
+
+
+#upperleft-div {
+  position: relative;
+  font-size: 5vw;
+  left: 0%;
+  top: 15%;
+  background-color: transparent;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+}
+
+#lowerleft-div {
+  position: relative;
+  font-size: 5vw;
+  left: 0%;
+  top: 85%;
+  background-color: transparent;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+}
+
+
+#upperright-div {
+  position: relative;
+  font-size: 5vw;
+  right: 0%;
+  top: 15%;
+  background-color: transparent;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+}
+
+#lowerright-div {
+  position: relative;
+  font-size: 5vw;
+  right: 0%;
+  top: 85%;
+  background-color: transparent;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+}
+
+
+
+.front {
+  width: 300px; /* 50% of the viewport width */
+  height: 200px; /* 30% of the viewport height */
+  background-color: white; /* Background color, you can change this */
+  border: 2px solid black;
+  margin: 0 auto; /* Center horizontally */
+}
+
+#upper_state {
+  width: 250px;
+  height:  250px;
+  line-height:  250px;; /* Center the text vertically */
+  border-radius: 50%;
+  font-size: 100px;
+  color: white;
+  background-color: black;
+  position: fixed;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 1px solid black;
+  cursor: pointer;
+  left: 50%;
+  top: 20%;
+}
+
+#lower_left_state {
+  width: 250px;
+  height:  250px;
+  line-height:  250px;; /* Center the text vertically */
+  border-radius: 50%;
+  font-size: 100px;
+  color: white;
+  background-color: black;
+  position: fixed;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  text-align-last: center;
+  border: 1px solid black;
+  cursor: pointer;
+  left: 20%;
+  top: 80%;
+}
+
+
+#lower_right_state {
+  width:  250px;
+  height: 250px;
+  line-height:  250px;; /* Center the text vertically */
+  border-radius: 50%;
+  font-size: 100px;
+  color: white;
+  background-color: black;
+  position: fixed;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 1px solid black;
+  cursor: pointer;
+  left: 80%;
+  top: 80%;
+}
+
+
+
+
+
+#upper_state_pay{
+  width: 60px;
+  height:  60px;
+  line-height:  60px;; /* Center the text vertically */
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  position: relative;
+  /* z-index: 999; */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 1px solid black;
+  cursor: pointer;
+  left: 50%;
+  top: 20%;
+}
+
+#lower_left_state_pay{
+  width: 60px;
+  height:  60px;
+  line-height:  60px; /* Center the text vertically */
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  position: relative;
+  transform: translate(-50%, -150%);
+  border: 1px solid black;
+  cursor: pointer;
+  left: 20%;
+  top: 80%;
+}
+
+
+#lower_right_state_pay {
+  width:  60px;
+  height: 60px;
+  line-height:  60px; /* Center the text vertically */
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  position: relative;
+  transform: translate(-50%, -250%); /* Adjusted transform values */
+  text-align: center; 
+  border: 1px solid black;
+  cursor: pointer;
+  left: 80%;
+  top: 80%; 
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/lib/jquery-3.5.0.min.js"></script>
+    <script src="js/lib/bowser.js"></script>
+    <script src="js/lib/jspsych/dist/jspsych.js"></script>
+    <!-- ANY functions/plugins within the Jspsych library -->
+    <script src="js/lib/jspsych/dist/plugin-preload.js"></script>
+    <script src="js/lib/jspsych/dist/plugin-survey-text.js"></script>
+    <script src="js/lib/jspsych/dist/plugin-survey-multi-choice.js"></script>
+    <script src="js/lib/jspsych/dist/plugin-fullscreen.js"></script>
+    <script src="js/lib/jspsych/dist/plugin-html-button-response.js"></script>
+    <script src="js/lib/jspsych/dist/plugin-html-keyboard-response.js"></script>
+    <script src="js/lib/jspsych/dist/plugin-image-keyboard-response.js"></script>
+    <script src="js/lib/jspsych/dist/plugin-webgazer-init-camera.js"></script>
+    <script src="js/lib/jspsych/dist/plugin-webgazer-calibrate.js"></script>
+    <script src="js/lib/jspsych/dist/plugin-webgazer-validate.js"></script>
+    <script src="js/lib/jspsych/examples/js/webgazer/webgazer.js"></script>
+    <script src="js/lib/jspsych/dist/extension-webgazer.js"></script>
+    <script src="js/lib/jspsych/dist/plugin-virtual-chinrest.js"></script>
+    
+    <!-- ANY functions/plugins that specific for the study -->
+    <script src="js/utilsHelper.js"></script>
+    <script src="js/stimuli.js"></script>
+    <script src="js/exp_plugins/text-binary-choice.js"></script>
+    <script src="js/exp_plugins/img-binary-choice.js"></script>
+    <script src="js/exp_plugins/two-attribute-binary-choice.js"></script>
+    <script src="js/exp_plugins/three-attribute-binary-choice.js"></script>
+    <script src="js/main_task.js"></script>
+    <link
+      rel="stylesheet"
+      href="js/lib/jspsych/dist/jspsych.css"
+    />
+    <link href="css/binary-choice.css" rel="stylesheet" type="text/css">
+    <style>
+      .jspsych-btn {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+    style="background-color: white;color:black; padding-bottom: 50px; padding-left: 50px;padding-right: 50px; padding-top: 50px; font-size: larger; font-family:Arial, Helvetica, sans-serif">
+    <img src="img/UCLASeal.png" alt="Flowers in Chania" width="200" height="200" style="vertical-align:top">
+    <h1 style="text-align: center;"> Welcome to the study! </h1>
+    <br></br>
+    <p> <b>Study Title: </b>The dynamics of economic decision making</br> </p>
+  
+    
+    <p><b>Providing consent: </b></br>
+        I have read (or someone has read to me) this page and I am aware that I am being asked to participate in a research study. 
+         I have had the opportunity to ask questions and have had them answered to my satisfaction. 
+          I voluntarily agree to participate in this study. I am not giving up any legal rights by agreeing to participate. 
+
+ </p>
+
+    <b>
+        <p style="color: black"> 
+Please click the button below to proceed and participate in this study. If you do not wish to participate, please close your browser window or notify the experimenter. 
+ </p>
+    </b>
+
+    <p style="text-align: center;"></p>
+    <div style="text-align:right;">
+        <input type="checkbox" class="checkmark">
+        I <b>AGREE</b> with the above consent.
+        <br><br><br>
+        <button class="goExp" style="font-size: larger;">
+            Continue
+        </button>
+    </div>
+</div>
+
+    
+  </body>
+  <script>
+    const goExp = document.querySelector(".goExp");
+
+    function showAlert() {
+        alert("Please click the button");
+    }
+
+    $('body').on('click', '.goExp', function(){
+        showAlert();
+    }).on('click', '.checkmark', function(event){
+        goExp.addEventListener('click',() => startExperiment());
+        event.stopPropagation();
+    });
+    
+     
+
+  </script>
+</html>
